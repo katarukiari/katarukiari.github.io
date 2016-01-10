@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAuzins</title>
+    <link rel="SHORTCUT ICON" href="bildes/favicon.ico"/>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
+
+    <script src="js/vendor/modernizr.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min.js"><\/script>')</script>
+
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/vendor/prefixfree.min.js"></script>
+    <script src="js/vendor/jquery.slides.min.js"></script>
+    <script src="js/script.js"></script>
+
+<!--[if lt IE 9]>
+    <style>
+        header
+        {
+            margin: 0 auto 20px auto;
+        }
+        #four_columns .img-item figure span.thumb-screen
+        {
+            display:none;
+        }
+    </style>
+   <![endif]-->
+
+
+
+    <script>
+        $(function() {
+            $('#slides').slidesjs({
+                height: 235,
+                navigation: false,
+                pagination: false,
+                effect: {
+                    fade: {
+                        speed: 400
+                    }
+                },
+                callback: {
+                    start: function(number)
+                    {
+                        $("#slider_content1,#slider_content2,#slider_content3").fadeOut(500);
+                    },
+                    complete: function(number)
+                    {
+                        $("#slider_content" + number).delay(500).fadeIn(1000);
+                    }
+                },
+                play: {
+                    active: false,
+                    auto: true,
+                    interval: 6000,
+                    pauseOnHover: false,
+                    effect: "fade"
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="toggleMobile">
+        <span class="menu1"></span>
+        <span class="menu2"></span>
+        <span class="menu3"></span>
+        <span class="menu4"></span>
+        <span class="menu5"></span>
+    </div>
+    <div id="mobileMenu">
+        <ul>
+            <li><a href="Sakums.html">Sākums</a></li>
+            <li><a href="Galerija.html">Galerija</a></li>
+            <li><a href="Forums.html">Forums</a></li>
+            <li><a href="Kontakti.html">Kontakts</a></li>
+            <li><a href="logreg.html">Piereģistrēties</a></li>
+        </ul>
+    </div>
+    <h1>Esi sveicināts!</h1>
+    <p>Mans hobijs dejas.</p>
+
+    <nav>
+        <h2 class="hidden">Mūsu navigators</h2>
+        <ul>
+            <li><a href="Sakums.html">Sākums</a></li>
+            <li><a href="Galerija.html">Galerija</a></li>
+            <li><a href="Forums.html">Forums</a></li>
+            <li><a href="Kontakti.html">Kontakts</a></li>
+            <li><a href="logreg.html">Piereģistrēties</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="container">
+    <h2 class="hidden">Slide lapa</h2>
+    <article id="slider_content1">
+        <h3>Vai vēlies iemācīties dejot?</h3>
+        <p>Latvijā ir daudz iespēju, kur apgūt dejošanas prasmes. <a href="http://www.ghettofamily.com/gg/lat/ghetto_dance/deju_akademija/?text_id=1505622" class="responsive_button">Spied šeit...</a></p>
+        <a class="button" href="http://www.ghettofamily.com/gg/lat/ghetto_dance/deju_akademija/?text_id=1505622">Spied šeit...</a>
+    </article>
+    <article id="slider_content2">
+        <h3>Deju stili</h3>
+        <p>Mūsdienu dejās ir daudz un dāžadu stilu. Kāds varētu būt Jūsu? <a href="http://www.hopa.lv/deju-stili/" class="responsive_button">Spied šeit...</a></p>
+        <a class="button" href="http://www.hopa.lv/deju-stili/">Spied šeit...</a>
+    </article>
+    <article id="slider_content3">
+        <h3>Veselība</h3>
+        <p>Protams, nevaram aizmirst par veselīgu dzīves veidu. <a href="http://latvuda.lv/category/skaistums-veseliba-atputa/" class="responsive_button">Spied šeit...</a></p>
+        <a class="button" href="http://latvuda.lv/category/skaistums-veseliba-atputa/">Spied šeit...</a>
+    </article>
+    <div id="slides">
+        <img src="bildes/4.jpg." alt="Some alt text">
+        <img src="bildes/5.jpg." alt="Some alt text">
+        <img src="bildes/6.jpg." alt="Some alt text">
+    </div>
+</section>
+<section id="spacer">
+    <h2 class="hidden">Meklēšanas rīks</h2>
+    <p>Vai vēlies atrast kādu noteiktu tekstu vai vārdu?</p>
+    <div class="search">
+        <form action="#">
+            <input type="text" name="sitesearch" value="Raksti tekstu šeit..."/>
+            <input type="submit" name="start_search" class="button" value="Meklēt"/>
+        </form>
+    </div>
+</section>
+<section id="four_columns">
+    <h2>
+        Galerija
+    </h2>
+    <article class="img-item">
+        <h3 class="hidden">Bilde1</h3>
+        <figure>
+            <a href="bildes/1.jpg" rel="lightbox" title="Bilde 1">
+                <span class="thumb-screen"></span>
+                <img src="bildes/1.jpg" alt="Some alt text"/>
+            </a>
+            <figcaption>
+                <strong>
+                    Foto autors: nezināms
+                </strong>
+                Tiks pievienots raksts.
+            </figcaption>
+        </figure>
+    </article>
+    <article class="img-item">
+        <h3 class="hidden">Bilde2</h3>
+        <figure>
+            <a href="bildes/2.jpg" rel="lightbox" title="Bilde 2">
+                <span class="thumb-screen"></span>
+                <img src="bildes/2.jpg" alt="Some alt text"/>
+            </a>
+            <figcaption>
+                <strong>
+                    Foto autors: nezināms
+                </strong>
+                Tiks pievienots raksts.
+            </figcaption>
+        </figure>
+    </article>
+    <article class="img-item">
+        <h3 class="hidden">Bilde 3</h3>
+        <figure>
+            <a href="bildes/3.jpg" rel="lightbox" title="Bilde 3">
+                <span class="thumb-screen"></span>
+                <img src="bildes/3.jpg" alt="Some alt text"/>
+            </a>
+            <figcaption>
+                <strong>
+                    Foto autors: nezināms
+                </strong>
+                Tiks pievienots raksts.
+            </figcaption>
+        </figure>
+    </article>
+    <article class="img-item">
+        <h3 class="hidden">Bilde 4</h3>
+        <figure>
+            <a href="bildes/7.jpg" rel="lightbox" title="Bilde 4">
+                <span class="thumb-screen"></span>
+                <img src="bildes/7.jpg" alt="Some alt text"/>
+            </a>
+            <figcaption>
+                <strong>
+                    Foto autors: nezināms
+                </strong>
+                Tiks pievienots raksts.
+            </figcaption>
+        </figure>
+    </article>
+    <br class="clear"/>
+</section>
+<footer>
+    <h2 class="hidden">Footer</h2>
+    <section id="copyright">
+        <h3 class="hidden">Copyright notice</h3>
+        <div class="wrapper">
+            <div class="social">
+                <a href="javascript:void(0)"><img src="img/icon6.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon7.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon8.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon9.png" alt="Some alt text" width="25"/></a>
+                <a href="javascript:void(0)"><img src="img/icon10.png" alt="Some alt text" width="25"/></a>
+            </div>
+            &copy; Copyright 2016 by Alvis Auziņš. All Rights Reserved.
+        </div>
+    </section>
+    <section class="wrapper">
+        <h3 class="hidden">Footer content</h3>
+        <article class="column">
+            <h4>Article 5</h4>
+            Tiks pievienots raksts.
+        </article>
+        <article class="column midlist">
+            <h4>Article 6</h4>
+            <ul>
+                <li><a href="javascript:void(0)">Tiks pievienots raksts.</a></li>
+                <li><a href="javascript:void(0)">Tiks pievienots raksts.</a></li>
+                <li><a href="javascript:void(0)">Tiks pievienots raksts.</a></li>
+                <li><a href="javascript:void(0)">Tiks pievienots raksts.</a></li>
+            </ul>
+        </article>
+        <article class="column rightlist">
+            <h4>Article 7</h4>
+            <ul>
+                <li><a href="javascript:void(0)"><img src="img/example-slide-1sml.jpg" width="80" alt="Some alt text"/><span>Tiks pievienots raksts.</span></a></li>
+                <li><a href="javascript:void(0)"><img src="img/example-slide-2sml.jpg" width="80" alt="Some alt text"/><span>Tiks pievienots raksts.</span></a></li>
+                <li><a href="javascript:void(0)"><img src="img/example-slide-3sml.jpg" width="80" alt="Some alt text"/><span>Tiks pievienots raksts.</span></a></li>
+            </ul>
+            <br class="clear"/>
+        </article>
+    </section>
+</footer>
+</body>
+</html>
